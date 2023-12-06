@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Crud Simple</title>
+</head>
+<body>
+<h1>CRUD de Pacientes</h1>
+
+<!-- Formulario para crear un paciente -->
+<h2>Crear Paciente</h2>
+<form id="crearPacienteForm">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="text" id="tipoDocumento" placeholder="Tipo de Documento" required>
+    <input type="text" id="ID" placeholder="Número de Documento" required>
+    <input type="date" id="fechaNacimiento" placeholder="Fecha de Nacimiento" required>
+    <input type="text" id="telefono" placeholder="Teléfono" required>
+    <textarea id="direccion" placeholder="Dirección" required></textarea>
+    <button type="submit">Crear</button>
+</form>
+
+<!-- Lista de Pacientes -->
+<h2>Lista de Pacientes</h2>
+<ul id="listaPacientes">
+    <li>
+        <p class="nombre">Nombre del Paciente</p>
+        <p class="tipoDocumento">Tipo de Documento</p>
+        <p class="ID" data-id="1">Número de Documento</p>
+        <p class="fechaNacimiento">Fecha de Nacimiento</p>
+        <p class="telefono">Teléfono</p>
+        <p class="direccion">Dirección</p>
+        <a class="btnEditar" data-id="1">Editar</a>
+        <a class="btnEliminar" data-id="1">Eliminar</a>
+    </li>
+</ul>
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>
